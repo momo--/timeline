@@ -25,7 +25,7 @@
 .markdown-body h1, 
 .markdown-body h2
  {
-    color: #FFFFFF; /* VS Code 기본 파란색 계열 */
+    color: #d6db53; /* VS Code 기본 파란색 계열 */
     /* 또는 */
     /* color: darkred; */
     /* color: rgb(100, 50, 200); */
