@@ -1,6 +1,15 @@
 /* --- 배경색 추가 (최상단 또는 최하단에 추가) --- */
-body, .markdown-body {
-    background-color: #1e1e2e !important; /* 원하는 배경색 (예: 어두운 테마) */
+body {
+    background-color: #1e1e2e !important;
+}
+
+.markdown-body {
+    background-color: #1e1e2e !important;
+    color: #cdd6f4 !important;
+}
+
+.markdown-body a {
+    color: #89b4fa !important;
 }
 
 .markdown-body ul, 
