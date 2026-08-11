@@ -1,6 +1,6 @@
 /* --- 배경색 추가 (최상단 또는 최하단에 추가) --- */
-body {
-    background-color: #1e1e2e !important; /* 원하는 배경색 Hex 코드 */
+body, .markdown-body {
+    background-color: #1e1e2e !important; /* 원하는 배경색 (예: 어두운 테마) */
 }
 
 .markdown-body ul, 
