@@ -1,3 +1,8 @@
+/* --- 배경색 추가 (최상단 또는 최하단에 추가) --- */
+body {
+    background-color: #1e1e2e !important; /* 원하는 배경색 Hex 코드 */
+}
+
 .markdown-body ul, 
 .markdown-body ol {
     /* line-height 값을 줄입니다. 기본값은 보통 1.5 정도입니다. */
