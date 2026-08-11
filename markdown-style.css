@@ -1,15 +1,8 @@
 /* --- 배경색 추가 (최상단 또는 최하단에 추가) --- */
-body {
-    background-color: #1e1e2e !important;
-}
-
+body,
 .markdown-body {
-    background-color: #1e1e2e !important;
-    color: #cdd6f4 !important;
-}
-
-.markdown-body a {
-    color: #89b4fa !important;
+    background-color: #ffffff !important;
+    color: #222222 !important;
 }
 
 .markdown-body ul, 
