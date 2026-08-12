@@ -1,4 +1,4 @@
-```css id="g5f2qa"
+```css
 /*
  * Confluence-like Markdown Preview
  * VS Code Markdown Preview
@@ -20,7 +20,7 @@ body {
         Arial,
         sans-serif !important;
 
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
 
     margin: 0 !important;
@@ -35,7 +35,6 @@ body {
 
     margin: 0 auto !important;
 
-    /* 페이지 좌우 여백 */
     padding: 40px 80px !important;
 
     background: #ffffff !important;
@@ -49,7 +48,7 @@ body {
         Arial,
         sans-serif !important;
 
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
 }
 
@@ -70,36 +69,36 @@ body {
 }
 
 .markdown-body h1 {
-    font-size: 26px !important;
+    font-size: 25px !important;
     margin-top: 0;
-    margin-bottom: 24px;
-    padding-bottom: 12px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #dfe1e6;
 }
 
 .markdown-body h2 {
-    font-size: 20px !important;
-    margin-top: 36px;
-    margin-bottom: 16px;
+    font-size: 19px !important;
+    margin-top: 34px;
+    margin-bottom: 14px;
 }
 
 .markdown-body h3 {
-    font-size: 17px !important;
-    margin-top: 28px;
-    margin-bottom: 12px;
+    font-size: 16px !important;
+    margin-top: 26px;
+    margin-bottom: 10px;
 }
 
 .markdown-body h4 {
-    font-size: 15px !important;
-    margin-top: 24px;
-    margin-bottom: 10px;
+    font-size: 14px !important;
+    margin-top: 22px;
+    margin-bottom: 8px;
 }
 
 .markdown-body h5,
 .markdown-body h6 {
-    font-size: 14px !important;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    font-size: 13px !important;
+    margin-top: 18px;
+    margin-bottom: 7px;
 }
 
 
@@ -109,7 +108,7 @@ body {
 
 .markdown-body p {
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 
@@ -133,17 +132,17 @@ body {
 
 .markdown-body ul,
 .markdown-body ol {
-    margin-top: 6px;
-    margin-bottom: 14px;
-    padding-left: 26px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    padding-left: 25px;
 }
 
 .markdown-body li {
-    margin: 3px 0;
+    margin: 2px 0;
 }
 
 .markdown-body li > p {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 
@@ -152,8 +151,8 @@ body {
    ========================================================= */
 
 .markdown-body blockquote {
-    margin: 16px 0 !important;
-    padding: 12px 16px !important;
+    margin: 14px 0 !important;
+    padding: 10px 14px !important;
 
     background: #f4f5f7 !important;
     color: #172b4d !important;
@@ -169,7 +168,7 @@ body {
 }
 
 .markdown-body blockquote p + p {
-    margin-top: 8px !important;
+    margin-top: 6px !important;
 }
 
 
@@ -178,7 +177,7 @@ body {
    ========================================================= */
 
 .markdown-body code {
-    padding: 2px 5px !important;
+    padding: 2px 4px !important;
 
     background: #f4f5f7 !important;
     color: #172b4d !important;
@@ -201,8 +200,8 @@ body {
    ========================================================= */
 
 .markdown-body pre {
-    margin: 20px 0 !important;
-    padding: 16px !important;
+    margin: 18px 0 !important;
+    padding: 14px !important;
 
     background: #f4f5f7 !important;
     color: #172b4d !important;
@@ -227,8 +226,8 @@ body {
         "Liberation Mono",
         monospace;
 
-    font-size: 12px;
-    line-height: 1.55;
+    font-size: 11px;
+    line-height: 1.5;
 }
 
 
@@ -238,15 +237,15 @@ body {
 
 .markdown-body table {
     width: 100%;
-    margin: 20px 0;
+    margin: 18px 0;
 
     border-collapse: collapse;
 
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .markdown-body table th {
-    padding: 9px 11px;
+    padding: 8px 10px;
 
     background: #f4f5f7 !important;
     color: #172b4d !important;
@@ -258,7 +257,7 @@ body {
 }
 
 .markdown-body table td {
-    padding: 9px 11px;
+    padding: 8px 10px;
 
     background: #ffffff !important;
     color: #172b4d !important;
@@ -277,7 +276,7 @@ body {
 
 .markdown-body hr {
     height: 1px;
-    margin: 28px 0;
+    margin: 26px 0;
 
     background: #dfe1e6 !important;
     border: 0;
@@ -314,7 +313,7 @@ body {
    ========================================================= */
 
 .markdown-body input[type="checkbox"] {
-    margin-right: 6px;
+    margin-right: 5px;
 }
 
 
@@ -323,8 +322,8 @@ body {
    ========================================================= */
 
 .markdown-body details {
-    margin: 16px 0 !important;
-    padding: 12px 16px !important;
+    margin: 14px 0 !important;
+    padding: 10px 14px !important;
 
     background: #f4f5f7 !important;
     color: #172b4d !important;
@@ -345,7 +344,7 @@ body {
    ========================================================= */
 
 .markdown-body kbd {
-    padding: 2px 6px;
+    padding: 2px 5px;
 
     background: #fafbfc !important;
     color: #172b4d !important;
@@ -361,7 +360,7 @@ body {
         Consolas,
         monospace;
 
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
