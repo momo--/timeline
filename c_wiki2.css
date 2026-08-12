@@ -1,0 +1,571 @@
+```css
+/*
+ * ============================================================
+ * Confluence-like Markdown Preview
+ * For VS Code Markdown Preview
+ *
+ * Target:
+ *   - Confluence Cloud-like visual style
+ *   - Compact technical-document layout
+ *   - White background
+ *   - Korean-friendly typography
+ *   - No dependency on timeline/markdown-style.css
+ * ============================================================
+ */
+
+
+/* ============================================================
+   1. Base / Page
+   ============================================================ */
+
+html {
+    background: #ffffff !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #ffffff !important;
+    color: #172b4d !important;
+
+    font-family:
+        "Atlassian Sans",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        Arial,
+        sans-serif !important;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ============================================================
+   2. Document Container
+   ============================================================ */
+
+.markdown-body {
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto !important;
+
+    padding: 48px 80px 80px 80px !important;
+
+    background: #ffffff !important;
+    color: #172b4d !important;
+
+    font-family:
+        "Atlassian Sans",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        Arial,
+        sans-serif !important;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+/* ============================================================
+   3. Headings
+   ============================================================ */
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    color: #172b4d !important;
+
+    font-family:
+        "Atlassian Sans",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        Arial,
+        sans-serif !important;
+
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+
+/* H1 */
+
+.markdown-body h1 {
+    margin: 0 0 28px 0 !important;
+    padding: 0 !important;
+
+    font-size: 25px !important;
+    font-weight: 600;
+
+    border: 0 !important;
+}
+
+
+/* H2 */
+
+.markdown-body h2 {
+    margin: 36px 0 14px 0 !important;
+    padding: 0 !important;
+
+    font-size: 19px !important;
+}
+
+
+/* H3 */
+
+.markdown-body h3 {
+    margin: 28px 0 10px 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+}
+
+
+/* H4 */
+
+.markdown-body h4 {
+    margin: 22px 0 8px 0 !important;
+    padding: 0 !important;
+
+    font-size: 14px !important;
+}
+
+
+/* H5 / H6 */
+
+.markdown-body h5 {
+    margin: 20px 0 7px 0 !important;
+
+    font-size: 13px !important;
+}
+
+.markdown-body h6 {
+    margin: 18px 0 7px 0 !important;
+
+    font-size: 13px !important;
+}
+
+
+/* ============================================================
+   4. Paragraph
+   ============================================================ */
+
+.markdown-body p {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+
+    color: #172b4d !important;
+}
+
+
+/* ============================================================
+   5. Strong / Emphasis
+   ============================================================ */
+
+.markdown-body strong {
+    color: #172b4d !important;
+    font-weight: 600;
+}
+
+.markdown-body b {
+    color: #172b4d !important;
+    font-weight: 600;
+}
+
+.markdown-body em {
+    color: #172b4d !important;
+}
+
+.markdown-body i {
+    color: #172b4d !important;
+}
+
+
+/* ============================================================
+   6. Links
+   ============================================================ */
+
+.markdown-body a {
+    color: #0c66e4 !important;
+
+    text-decoration: none;
+}
+
+.markdown-body a:hover {
+    color: #0055cc !important;
+    text-decoration: underline;
+}
+
+
+/* ============================================================
+   7. Lists
+   ============================================================ */
+
+.markdown-body ul,
+.markdown-body ol {
+    margin-top: 4px !important;
+    margin-bottom: 12px !important;
+
+    padding-left: 24px;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ul,
+.markdown-body ol ol {
+    margin-top: 2px !important;
+    margin-bottom: 4px !important;
+}
+
+.markdown-body li {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+
+    color: #172b4d !important;
+}
+
+.markdown-body li > p {
+    margin-top: 0 !important;
+    margin-bottom: 4px !important;
+}
+
+
+/* ============================================================
+   8. Blockquote
+   ============================================================ */
+
+.markdown-body blockquote {
+    box-sizing: border-box;
+
+    margin: 16px 0 !important;
+    padding: 10px 16px !important;
+
+    background: #f7f8f9 !important;
+
+    border-left: 3px solid #0c66e4 !important;
+
+    color: #172b4d !important;
+
+    font-style: normal;
+}
+
+.markdown-body blockquote p {
+    margin: 0 !important;
+
+    color: #172b4d !important;
+}
+
+.markdown-body blockquote p + p {
+    margin-top: 8px !important;
+}
+
+
+/* ============================================================
+   9. Inline Code
+   ============================================================ */
+
+.markdown-body code {
+    padding: 1px 4px !important;
+
+    background: #f1f2f4 !important;
+    color: #172b4d !important;
+
+    border: 0 !important;
+    border-radius: 3px;
+
+    font-family:
+        "Atlassian Mono",
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace !important;
+
+    font-size: 0.9em;
+}
+
+
+/* ============================================================
+   10. Code Block
+   ============================================================ */
+
+.markdown-body pre {
+    box-sizing: border-box;
+
+    margin: 18px 0 !important;
+    padding: 14px 16px !important;
+
+    background: #f7f8f9 !important;
+    color: #172b4d !important;
+
+    border: 1px solid #dfe1e6 !important;
+    border-radius: 4px;
+
+    overflow-x: auto;
+}
+
+.markdown-body pre code {
+    display: block;
+
+    padding: 0 !important;
+
+    background: transparent !important;
+    color: #172b4d !important;
+
+    border: 0 !important;
+
+    font-family:
+        "Atlassian Mono",
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace !important;
+
+    font-size: 11px !important;
+    line-height: 1.55;
+}
+
+
+/* ============================================================
+   11. Tables
+   ============================================================ */
+
+.markdown-body table {
+    width: 100%;
+
+    margin: 18px 0 !important;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    color: #172b4d !important;
+
+    font-size: 12px;
+}
+
+
+/* Table Header */
+
+.markdown-body table thead th,
+.markdown-body table th {
+    padding: 8px 10px !important;
+
+    background: #f1f2f4 !important;
+    color: #172b4d !important;
+
+    border: 1px solid #dfe1e6 !important;
+
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* Table Body */
+
+.markdown-body table td {
+    padding: 8px 10px !important;
+
+    background: #ffffff !important;
+    color: #172b4d !important;
+
+    border: 1px solid #dfe1e6 !important;
+
+    vertical-align: top;
+}
+
+
+/* Confluence-like: no zebra striping */
+
+.markdown-body table tr:nth-child(even) td {
+    background: #ffffff !important;
+}
+
+
+/* ============================================================
+   12. Horizontal Rule
+   ============================================================ */
+
+.markdown-body hr {
+    height: 1px !important;
+
+    margin: 28px 0 !important;
+
+    background: #dfe1e6 !important;
+
+    border: 0 !important;
+}
+
+
+/* ============================================================
+   13. Images
+   ============================================================ */
+
+.markdown-body img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 3px;
+}
+
+
+/* ============================================================
+   14. Task List
+   ============================================================ */
+
+.markdown-body input[type="checkbox"] {
+    margin-right: 6px;
+
+    vertical-align: middle;
+}
+
+
+/* ============================================================
+   15. Details / Summary
+   ============================================================ */
+
+.markdown-body details {
+    margin: 16px 0 !important;
+    padding: 10px 14px !important;
+
+    background: #f7f8f9 !important;
+    color: #172b4d !important;
+
+    border: 1px solid #dfe1e6 !important;
+    border-radius: 4px;
+}
+
+.markdown-body summary {
+    cursor: pointer;
+
+    color: #172b4d !important;
+
+    font-weight: 600;
+}
+
+
+/* ============================================================
+   16. Keyboard
+   ============================================================ */
+
+.markdown-body kbd {
+    padding: 1px 5px;
+
+    background: #f7f8f9 !important;
+    color: #172b4d !important;
+
+    border: 1px solid #b6bac3;
+    border-bottom-width: 2px;
+
+    border-radius: 3px;
+
+    font-family:
+        "Atlassian Mono",
+        "SFMono-Regular",
+        Consolas,
+        monospace;
+
+    font-size: 11px;
+}
+
+
+/* ============================================================
+   17. Definition / Mark
+   ============================================================ */
+
+.markdown-body mark {
+    padding: 1px 2px;
+
+    background: #fff7d6 !important;
+    color: #172b4d !important;
+}
+
+
+/* ============================================================
+   18. Selection
+   ============================================================ */
+
+.markdown-body ::selection {
+    background: #b3d4ff;
+}
+
+
+/* ============================================================
+   19. Scrollbar
+   ============================================================ */
+
+.markdown-body pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.markdown-body pre::-webkit-scrollbar-thumb {
+    background: #c1c7d0;
+
+    border-radius: 4px;
+}
+
+.markdown-body pre::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* ============================================================
+   20. Responsive
+   ============================================================ */
+
+@media (max-width: 1000px) {
+
+    .markdown-body {
+        max-width: 100%;
+
+        padding: 36px 50px !important;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .markdown-body {
+        padding: 28px 28px !important;
+
+        font-size: 13px;
+    }
+
+    .markdown-body h1 {
+        font-size: 23px !important;
+    }
+
+    .markdown-body h2 {
+        font-size: 18px !important;
+    }
+
+    .markdown-body h3 {
+        font-size: 15px !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .markdown-body {
+        padding: 24px 20px !important;
+    }
+}
+```
