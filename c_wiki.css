@@ -1,13 +1,17 @@
 ```css
-/* =========================================================
-   Confluence-like Markdown Preview for VS Code
-   ========================================================= */
+/*
+ * Confluence-like Markdown Preview
+ * For VS Code Markdown Preview
+ */
 
-/* ---------- Base ---------- */
+/* =========================================================
+   Base
+   ========================================================= */
 
 body {
     background: #ffffff !important;
     color: #172b4d !important;
+
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -15,17 +19,19 @@ body {
         "Noto Sans KR",
         Arial,
         sans-serif !important;
-    font-size: 16px;
+
+    font-size: 15px;
     line-height: 1.6;
+
     padding: 32px 48px;
 }
 
 .markdown-body {
-    background: #ffffff !important;
-    color: #172b4d !important;
-
     max-width: 900px;
     margin: 0 auto;
+
+    background: #ffffff !important;
+    color: #172b4d !important;
 
     font-family:
         -apple-system,
@@ -35,12 +41,14 @@ body {
         Arial,
         sans-serif !important;
 
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
 
-/* ---------- Headings ---------- */
+/* =========================================================
+   Headings
+   ========================================================= */
 
 .markdown-body h1,
 .markdown-body h2,
@@ -54,7 +62,7 @@ body {
 }
 
 .markdown-body h1 {
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 0;
     margin-bottom: 24px;
     padding-bottom: 12px;
@@ -62,32 +70,34 @@ body {
 }
 
 .markdown-body h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 36px;
     margin-bottom: 16px;
 }
 
 .markdown-body h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 28px;
     margin-bottom: 12px;
 }
 
 .markdown-body h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 24px;
     margin-bottom: 10px;
 }
 
 .markdown-body h5,
 .markdown-body h6 {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 20px;
     margin-bottom: 8px;
 }
 
 
-/* ---------- Paragraph ---------- */
+/* =========================================================
+   Paragraph
+   ========================================================= */
 
 .markdown-body p {
     margin-top: 0;
@@ -95,7 +105,9 @@ body {
 }
 
 
-/* ---------- Links ---------- */
+/* =========================================================
+   Links
+   ========================================================= */
 
 .markdown-body a {
     color: #0c66e4 !important;
@@ -107,7 +119,9 @@ body {
 }
 
 
-/* ---------- Lists ---------- */
+/* =========================================================
+   Lists
+   ========================================================= */
 
 .markdown-body ul,
 .markdown-body ol {
@@ -125,21 +139,25 @@ body {
 }
 
 
-/* ---------- Blockquote ---------- */
+/* =========================================================
+   Blockquote
+   ========================================================= */
 
 .markdown-body blockquote {
     margin: 16px 0;
     padding: 12px 16px;
 
     background: #f4f5f7 !important;
+    color: #172b4d !important;
+
     border-left: 4px solid #0c66e4;
 
-    color: #172b4d !important;
+    font-style: normal;
 }
 
 .markdown-body blockquote p {
-    color: #172b4d !important;
     margin: 0;
+    color: #172b4d !important;
 }
 
 .markdown-body blockquote p + p {
@@ -147,7 +165,9 @@ body {
 }
 
 
-/* ---------- Inline Code ---------- */
+/* =========================================================
+   Inline Code
+   ========================================================= */
 
 .markdown-body code {
     padding: 2px 5px;
@@ -168,7 +188,9 @@ body {
 }
 
 
-/* ---------- Code Block ---------- */
+/* =========================================================
+   Code Block
+   ========================================================= */
 
 .markdown-body pre {
     margin: 20px 0;
@@ -189,23 +211,20 @@ body {
 
     color: #172b4d !important;
 
-    font-size: 13px;
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace;
+
+    font-size: 12px;
     line-height: 1.55;
 }
 
 
-/* ---------- Horizontal Rule ---------- */
-
-.markdown-body hr {
-    height: 1px;
-    margin: 32px 0;
-
-    background: #dfe1e6 !important;
-    border: 0;
-}
-
-
-/* ---------- Tables ---------- */
+/* =========================================================
+   Tables
+   ========================================================= */
 
 .markdown-body table {
     width: 100%;
@@ -213,7 +232,7 @@ body {
 
     border-collapse: collapse;
 
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .markdown-body table th {
@@ -242,7 +261,22 @@ body {
 }
 
 
-/* ---------- Strong / Emphasis ---------- */
+/* =========================================================
+   Horizontal Rule
+   ========================================================= */
+
+.markdown-body hr {
+    height: 1px;
+    margin: 32px 0;
+
+    background: #dfe1e6 !important;
+    border: 0;
+}
+
+
+/* =========================================================
+   Strong / Emphasis
+   ========================================================= */
 
 .markdown-body strong {
     color: #172b4d !important;
@@ -254,7 +288,9 @@ body {
 }
 
 
-/* ---------- Images ---------- */
+/* =========================================================
+   Images
+   ========================================================= */
 
 .markdown-body img {
     max-width: 100%;
@@ -264,20 +300,24 @@ body {
 }
 
 
-/* ---------- Task List ---------- */
+/* =========================================================
+   Task List
+   ========================================================= */
 
 .markdown-body input[type="checkbox"] {
     margin-right: 6px;
 }
 
 
-/* ---------- Definition / Details ---------- */
+/* =========================================================
+   Details / Summary
+   ========================================================= */
 
 .markdown-body details {
     margin: 16px 0;
     padding: 12px 16px;
 
-    background: #f4f5f7;
+    background: #f4f5f7 !important;
     border: 1px solid #dfe1e6;
     border-radius: 4px;
 }
@@ -288,12 +328,16 @@ body {
 }
 
 
-/* ---------- Keyboard ---------- */
+/* =========================================================
+   Keyboard
+   ========================================================= */
 
 .markdown-body kbd {
     padding: 2px 6px;
 
-    background: #fafbfc;
+    background: #fafbfc !important;
+    color: #172b4d !important;
+
     border: 1px solid #dfe1e6;
     border-bottom-color: #b3bac5;
     border-radius: 3px;
@@ -309,14 +353,18 @@ body {
 }
 
 
-/* ---------- Selection ---------- */
+/* =========================================================
+   Selection
+   ========================================================= */
 
 .markdown-body ::selection {
     background: #b3d4ff;
 }
 
 
-/* ---------- Scrollbar ---------- */
+/* =========================================================
+   Code Block Scrollbar
+   ========================================================= */
 
 .markdown-body pre::-webkit-scrollbar {
     height: 8px;
